@@ -18,4 +18,8 @@ class DependencyInjector {
     func getMainViewModel(coordinator: MainCoordinator) -> MainViewModel {
         return MainViewModel(coordinator: coordinator)
     }
+
+    func getCalculatorViewModel(coordinator: MainCoordinator) -> CalculatorViewModel {
+        return CalculatorViewModel(coordinator: coordinator)
+    }
 }

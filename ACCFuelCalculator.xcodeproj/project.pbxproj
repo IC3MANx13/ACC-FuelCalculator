@@ -23,6 +23,8 @@
 		B86C725728E707E3005FCB8D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = B86C725628E707E3005FCB8D /* FirebaseCrashlytics */; };
 		B86C725E28E70C2B005FCB8D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B86C725D28E70C2B005FCB8D /* GoogleService-Info.plist */; };
 		B86C726A28E71D58005FCB8D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B86C726928E71D58005FCB8D /* .swiftlint.yml */; };
+		B8D6DEE528ED70650046EB54 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D6DEE428ED70650046EB54 /* CalculatorView.swift */; };
+		B8D6DEE728ED70730046EB54 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D6DEE628ED70730046EB54 /* CalculatorViewModel.swift */; };
 		E5FB048F3A67E6A578640B38 /* Pods_ACCFuelCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB309EBDC73577BEB0006C5C /* Pods_ACCFuelCalculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		B86C725D28E70C2B005FCB8D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B86C725F28E7115C005FCB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B86C726928E71D58005FCB8D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = ACCFuelCalculator/.swiftlint.yml; sourceTree = "<group>"; };
+		B8D6DEE428ED70650046EB54 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		B8D6DEE628ED70730046EB54 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				B85377D128EAF06300C3C585 /* Main */,
+				B8D6DEE328ED700A0046EB54 /* Calculator */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -197,6 +202,15 @@
 				B86C725B28E70AB1005FCB8D /* Modules */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B8D6DEE328ED700A0046EB54 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				B8D6DEE428ED70650046EB54 /* CalculatorView.swift */,
+				B8D6DEE628ED70730046EB54 /* CalculatorViewModel.swift */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		ECF2FAC966F9CE819446DA1D /* Frameworks */ = {
@@ -357,9 +371,11 @@
 				B85377E628EC426F00C3C585 /* LifecycleViewModifier.swift in Sources */,
 				B85377E928EC430200C3C585 /* Extensions.swift in Sources */,
 				B85377D628EAF31700C3C585 /* DependencyInjector.swift in Sources */,
+				B8D6DEE728ED70730046EB54 /* CalculatorViewModel.swift in Sources */,
 				B85377DF28EAF96E00C3C585 /* MainCoordinator.swift in Sources */,
 				B85377DC28EAF93800C3C585 /* BaseCoordinator.swift in Sources */,
 				B85377D928EAF90E00C3C585 /* BaseViewModel.swift in Sources */,
+				B8D6DEE528ED70650046EB54 /* CalculatorView.swift in Sources */,
 				B86C723E28E6D793005FCB8D /* MainView.swift in Sources */,
 				B86C723C28E6D793005FCB8D /* ACCFuelCalculatorApp.swift in Sources */,
 				B85377D428EAF2D500C3C585 /* MainViewModel.swift in Sources */,

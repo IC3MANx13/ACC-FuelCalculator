@@ -25,7 +25,8 @@ struct ACCFuelCalculatorApp: App {
     var body: some Scene {
         WindowGroup {
             let coordinator = MainCoordinator()
-            MainView(viewModel: DependencyInjector.shared.getMainViewModel(coordinator: coordinator))
+            MainView(mainViewModel: DependencyInjector.shared.getMainViewModel(coordinator: coordinator),
+                     calculatorViewModel: DependencyInjector.shared.getCalculatorViewModel(coordinator: coordinator))
         }
     }
 }
